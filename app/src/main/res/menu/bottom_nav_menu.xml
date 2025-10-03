@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_estudiantes"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Estudiantes" />
+
+    <item
+        android:id="@+id/navigation_materias"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Materias" />
+
+    <item
+        android:id="@+id/navigation_inscripciones"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Inscripciones" />
+
+    <item
+        android:id="@+id/navigation_calificaciones"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Calificaciones" />
+
+</menu>

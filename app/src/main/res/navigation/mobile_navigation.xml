@@ -1,0 +1,58 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_estudiantes">
+
+    <fragment
+        android:id="@+id/navigation_estudiantes"
+        android:name="Programacion.gestion_academica.ui.estudiantes.EstudiantesFragment"
+        android:label="Estudiantes"
+        tools:layout="@layout/fragment_estudiantes">
+        <action
+            android:id="@+id/action_navigation_estudiantes_to_addEditEstudianteFragment"
+            app:destination="@id/addEditEstudianteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_materias"
+        android:name="Programacion.gestion_academica.ui.materias.MateriasFragment"
+        android:label="Materias"
+        tools:layout="@layout/fragment_materias" />
+
+    <fragment
+        android:id="@+id/navigation_inscripciones"
+        android:name="Programacion.gestion_academica.ui.inscripciones.InscripcionesFragment"
+        android:label="Inscripciones"
+        tools:layout="@layout/fragment_inscripciones" />
+
+    <fragment
+        android:id="@+id/navigation_calificaciones"
+        android:name="Programacion.gestion_academica.ui.calificaciones.CalificacionesFragment"
+        android:label="Calificaciones"
+        tools:layout="@layout/fragment_calificaciones" />
+
+    <fragment
+        android:id="@+id/addEditEstudianteFragment"
+        android:name="Programacion.gestion_academica.ui.AddEditEstudianteFragment"
+        android:label="Gestionar Estudiante"
+        tools:layout="@layout/fragment_add_edit_estudiante">
+        <argument
+            android:name="estudianteId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="nombre"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="apellido"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>
